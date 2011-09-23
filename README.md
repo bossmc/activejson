@@ -13,6 +13,7 @@ Installation is easy, just add `gem activejson` to your Gemfile and let bundle d
 ##Example
 
 Create a view, something like `user.activejson` and fill it with something like this:
+
     json.user do |user|
       user.name @user.name
       user.age @user.age

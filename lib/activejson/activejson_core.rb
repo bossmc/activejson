@@ -6,7 +6,6 @@ MultiJson.engine = :yajl
 module ActiveJson
   class Core
     instance_methods.each {|m| undef_method(m) unless %w(__id__ __send__ to_json instance_eval nil? is_a? class).include?(m.to_s)}
-    attr_accessor :hash
 
     def initialize()
       @hash = {}

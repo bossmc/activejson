@@ -1,4 +1,3 @@
-require 'json'
 require 'multi_json'
 
 MultiJson.engine = :yajl
